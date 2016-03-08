@@ -1,0 +1,193 @@
+
+==================== FINAL INTERFACE ====================
+2016-03-08 21:56:02.150439 UTC
+
+interface main@main:Main 7103
+  interface hash: 9c39a7844205dc720e97b1749e519526
+  ABI hash: 4cdb2ab465512c8ba843fd8d3a5f7f6f
+  export-list hash: 1f196230d46b142ebbd063e2f9b9ee1f
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 64d419573c786df5dd4724878b115821
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies: HW1
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0248c1e850b7ea124cf7a2e1669ebf67
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  HW1 f18514405278ba4ee7a6a7ef749f050b
+  exports: 005e6105b1ab23dff55c4ce53cd33143
+  fact2 7131b16780412ff8f1f636ab37767bfa
+  hw1_1 4c53bbab614798c0442137f0a8f6c57e
+  hw1_2 3d7b8e1a52bf966b8c119e9dc67b9596
+  isPrime 08052927dbbc2225b2c9eb89732c11a8
+  primeSum 62fa67a359168eba9379382a37f26468
+200cf06b19b883c5737624f07a1adb3f
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+85f9cca7e90ed19066d02326806c8c73
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main21
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main19
+                        GHC.Types.True
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main16
+                        GHC.Types.True
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main13
+                        GHC.Types.True
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main11
+                        GHC.Types.True
+                        ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main9
+                        GHC.Types.True
+                        ipv8 of ds6 { (#,#) ipv10 ipv11 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main6
+                        GHC.Types.True
+                        ipv10 of ds7 { (#,#) ipv12 ipv13 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Main.main2
+                   GHC.Types.True
+                   ipv12 } } } } } } }) -}
+09f604b271c6a79d1189bbf475c92b1f
+  main10 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 18) -}
+c0e4dbf825643920e0c7863dd9c59560
+  main11 :: GHC.Base.String
+  {- Unfolding: (case HW1.isPrime Main.main12 of wild {
+                   GHC.Types.False -> GHC.Show.shows17
+                   GHC.Types.True -> GHC.Show.shows16 }) -}
+380b84db68920ba69a57213f841a76c9
+  main12 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 17) -}
+26e73b28d00a342d8b8d77c419c1cfd9
+  main13 :: GHC.Base.String
+  {- Unfolding: (case GHC.Show.$w$cshowsPrec1
+                        0
+                        Main.main14
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
+9e92f34f9cd2526891c63afbd79006ab
+  main14 :: GHC.Integer.Type.Integer
+  {- Unfolding: (HW1.fact2 Main.main15) -}
+fe6004c83d34acbdf007a583bcf42c5d
+  main15 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 7) -}
+98797d3749553d239731dacc41c36537
+  main16 :: GHC.Base.String
+  {- Unfolding: (case GHC.Show.$w$cshowsPrec1
+                        0
+                        Main.main17
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
+3979460a5b484710ec50e3ed0de79880
+  main17 :: GHC.Integer.Type.Integer
+  {- Unfolding: (HW1.fact2 Main.main18) -}
+9d72f164689ede6f1f0839d9ab80a32e
+  main18 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 6) -}
+f3fbc9215dbed0196d0977878767de67
+  main19 :: GHC.Base.String
+  {- Unfolding: (case HW1.$whw1_2 Main.main20 of ww { DEFAULT ->
+                 GHC.Float.$w$sshowSignedFloat
+                   GHC.Float.$fShowDouble_$sshowFloat
+                   GHC.Show.shows18
+                   ww
+                   (GHC.Types.[] @ GHC.Types.Char) }) -}
+e7cd4c541ded247ebc13113484633c16
+  main2 :: GHC.Base.String
+  {- Unfolding: (case GHC.Show.$w$cshowsPrec1
+                        0
+                        Main.main3
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
+c52a55c1b72dd6bfefcd8297cd045327
+  main20 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 3) -}
+c5ca92c6a636c6cfbbc60d2e8967866b
+  main21 :: GHC.Base.String
+  {- Unfolding: (case GHC.Show.$w$cshowsPrec1
+                        0
+                        Main.main22
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
+0efe72f3ae236d5d98d93ff97f070fc6
+  main22 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 11) -}
+53cce9fabfe6d0bc404b38937e5eab09
+  main23 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+7a34b2c42f777c896ea6c26c0a95473d
+  main3 :: GHC.Integer.Type.Integer
+  {- Unfolding: (HW1.primeSum Main.main5 Main.main4) -}
+b1591555260fa9925b89cb4c1613a884
+  main4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 15) -}
+ff84072f7aebcc185520d3e0f66dd47f
+  main5 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 8) -}
+a10a7b6a3262844395c112f60c32766e
+  main6 :: GHC.Base.String
+  {- Unfolding: (GHC.Show.$fShowInteger_$cshowList
+                   Main.main7
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+fb99a0a66fc33892107e741d28c1f01c
+  main7 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (GHC.Enum.enumDeltaToInteger
+                   Main.main5
+                   Main.main8
+                   Main.main4) -}
+54e20ee56ba454a1761e9c5c0a00f685
+  main8 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 1) -}
+7134794b5d5b1a5f1f7d22900dcf979e
+  main9 :: GHC.Base.String
+  {- Unfolding: (case HW1.isPrime Main.main10 of wild {
+                   GHC.Types.False -> GHC.Show.shows17
+                   GHC.Types.True -> GHC.Show.shows16 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
