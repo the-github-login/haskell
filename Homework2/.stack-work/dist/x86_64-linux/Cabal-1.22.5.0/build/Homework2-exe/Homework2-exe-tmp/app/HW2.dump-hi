@@ -1,0 +1,143 @@
+
+==================== FINAL INTERFACE ====================
+2016-03-31 13:26:18.133048 UTC
+
+interface main@main:HW2 7103
+  interface hash: acedf3d79358c82b3b30ab50e1ceaa66
+  ABI hash: 444c8eb89ca114a03c2e9dc0fadedf23
+  export-list hash: ef27eeab7ce6ed592222bbc08167457a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b29d200b2c0016d190d5d67283a45756
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  HW2.coPrime
+  HW2.gcd
+  HW2.gcfList
+  HW2.list2_1
+  HW2.perfect
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+0886c20f2f49128e70100da078c850e2
+  $wperfect :: GHC.Real.Integral a => GHC.Prim.Int# -> [a]
+  {- Arity: 2, Strictness: <L,1*U(1*U,A,A,A,A,A,A,A,A)><L,U>,
+     Inline: [0] -}
+f406c4f5f4611752fd3e84819557040f
+  coPrime :: GHC.Real.Integral a => a -> a -> GHC.Types.Bool
+  {- Arity: 3,
+     Strictness: <S(SLLLLLLLL),U(U,A,A,A,A,C(C1(U)),A,A,A)><L,U><L,U>,
+     Unfolding: (\ @ a
+                   $dIntegral :: GHC.Real.Integral a
+                   eta :: a
+                   eta1 :: a ->
+                 let {
+                   $dReal :: GHC.Real.Real a = GHC.Real.$p1Integral @ a $dIntegral
+                 } in
+                 GHC.Classes.==
+                   @ a
+                   (GHC.Classes.$p1Ord @ a (GHC.Real.$p2Real @ a $dReal))
+                   (HW2.gcd @ a $dIntegral eta eta1)
+                   (GHC.Num.fromInteger
+                      @ a
+                      (GHC.Real.$p1Real @ a $dReal)
+                      HW2.coPrime1)) -}
+4f51e2f0bc0be52daf2b961c64f0d987
+  coPrime1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 1) -}
+83570c88771ebe0862acd10cd1a3c64b
+  gcd :: GHC.Real.Integral a => a -> a -> a
+  {- Arity: 3,
+     Strictness: <S(SLLLLLLLL),U(U,A,A,A,A,C(C1(U)),A,A,A)><L,U><L,U> -}
+06bfc166a1ddc095ec452d7c08d991e8
+  gcfList :: GHC.Real.Integral a => [a] -> a
+  {- Arity: 2,
+     Strictness: <S,U(U,A,A,A,C(C1(U)),C(C1(U)),A,A,A)><S,1*U>,
+     Unfolding: (\ @ a $dIntegral :: GHC.Real.Integral a eta :: [a] ->
+                 let {
+                   $dReal :: GHC.Real.Real a = GHC.Real.$p1Integral @ a $dIntegral
+                 } in
+                 let {
+                   $dNum :: GHC.Num.Num a = GHC.Real.$p1Real @ a $dReal
+                 } in
+                 let {
+                   z :: a = GHC.Num.fromInteger @ a $dNum HW2.coPrime1
+                 } in
+                 letrec {
+                   go :: [a] -> a {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ ds :: [a] ->
+                     case ds of wild {
+                       [] -> z
+                       : y ys
+                       -> let {
+                            y1 :: a = go ys
+                          } in
+                          GHC.Real.div
+                            @ a
+                            $dIntegral
+                            (GHC.Num.* @ a $dNum y y1)
+                            (HW2.gcd @ a $dIntegral y y1) }
+                 } in
+                 go eta) -}
+988a5e4503669bb6285dccef08ba1778
+  list2_1 :: GHC.Real.Integral a => [[a]] -> a
+  {- Arity: 2, Strictness: <L,1*U(1*U,A,A,A,A,A,A,A,A)><S,1*U>,
+     Unfolding: (\ @ a $dIntegral :: GHC.Real.Integral a eta :: [[a]] ->
+                 case eta of wild {
+                   [] -> HW2.list2_3 @ a
+                   : ipv ipv1
+                   -> let {
+                        $dReal :: GHC.Real.Real a = GHC.Real.$p1Integral @ a $dIntegral
+                      } in
+                      let {
+                        $dOrd :: GHC.Classes.Ord a = GHC.Real.$p2Real @ a $dReal
+                      } in
+                      case GHC.Base.map
+                             @ [a]
+                             @ a
+                             (GHC.List.maximum @ a $dOrd)
+                             wild of wild1 {
+                        [] -> HW2.list2_2 @ a
+                        : ipv2 ipv3
+                        -> let {
+                             k :: a -> a -> a = GHC.Classes.min @ a $dOrd
+                           } in
+                           letrec {
+                             go :: [a] -> a -> a {- Arity: 2, Strictness: <S,1*U><L,U> -}
+                             = \ ds :: [a] eta1 :: a ->
+                               case ds of wild2 { [] -> eta1 : y ys -> go ys (k eta1 y) }
+                           } in
+                           go ipv3 ipv2 } }) -}
+7814f8b1a6c2558c0ec29df86742a669
+  list2_2 :: a
+  {- Strictness: b -}
+9ab0a5d63c77296fa31405d6de42c823
+  list2_3 :: a
+  {- Strictness: b -}
+534c1b2084d555efd0115cd91dd4730c
+  perfect :: GHC.Real.Integral a => GHC.Types.Int -> [a]
+  {- Arity: 2, Strictness: <L,1*U(1*U,A,A,A,A,A,A,A,A)><S,1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a w :: GHC.Real.Integral a w1 :: GHC.Types.Int ->
+                 case w1 of ww { GHC.Types.I# ww1 -> HW2.$wperfect @ a w ww1 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
