@@ -1,0 +1,75 @@
+
+==================== FINAL INTERFACE ====================
+2016-05-21 17:15:06.663908 UTC
+
+interface main@main:Main 7103
+  interface hash: ba186163e20e9f41b201f6ca00763613
+  ABI hash: 1351185198ff3fd740802fdbd69efbf2
+  export-list hash: 5469a427a1f3987ebdb8f698119fe847
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9ccbff508cc0d0c806a5c3817adc3861
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+  Main.Tree{Main.Empty Main.Node}
+module dependencies: HW3
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Char c8f827952d4111ae2e47c0b105217cdb
+import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0248c1e850b7ea124cf7a2e1669ebf67
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  HW3 165aa4ce0d03eb660d29d33710379cbb
+  exports: ecda2a06a561e359381aec2c62798042
+  root 2a20bcc50d7c9a26233c1476b3b9f955
+8d5b8e34b6d3b82da7424212bf51ecaf
+  data Tree a = Empty | Node (Main.Tree a) a (Main.Tree a)
+    Promotable
+6aa71a6574f25b635f5f2dab042ffded
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+1b760ba98253982f9a4c528dbc8f1656
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Main.main2
+                   GHC.Types.True
+                   eta) -}
+f75bca0c5652596e8d4b160814ed3fab
+  main2 :: GHC.Base.String
+  {- Unfolding: (case HW3.$wroot 1.0e-4 of ww2 { DEFAULT ->
+                 GHC.Float.$w$sshowSignedFloat
+                   GHC.Float.$fShowDouble_$sshowFloat
+                   GHC.Show.shows18
+                   ww2
+                   (GHC.Types.[] @ GHC.Types.Char) }) -}
+298f90b5555d83392f16e8326a637890
+  main3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

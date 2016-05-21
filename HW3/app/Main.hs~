@@ -1,0 +1,14 @@
+module Main where
+
+import HW3
+import Data.List
+import Data.Char
+
+data Tree a = Empty | Node (Tree a) a (Tree a)
+
+main :: IO ()
+main = do
+	putStrLn $ show $ root 0.0001
+	putStrLn $ show $ sequence2_3_f 4
+	putStrLn $ show $ listDigits Node (Node Empty "hm4m" Empty) "mdaaa" (Node Empty "lya1ya" Empty) 
+
